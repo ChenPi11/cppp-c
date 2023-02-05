@@ -494,7 +494,7 @@ __CPPPBASE
  * @date 2023-1-30
  * @brief C++ Plus C platform check
  */
-extern int _cppp_platform_check();
+extern int _cppp_platform_check(void);
 
 __END_CPPPBASE
 

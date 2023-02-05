@@ -36,24 +36,6 @@ extern "C"
 #include "../libiconv/localcharset.h"
 #include "../libiconv/relocatable.h"
 #include "../libiconv/iconv.h"
-//define C++ Plus libiconv wrapper macros
-#define _CPPP_ICONV_VER _libiconv_version
-#define _CPPP_iconv libiconv
-#define _CPPP_iconv_open libiconv_open
-#define _CPPP_iconvctl libiconvctl
-#define _CPPP_iconvlist libiconvlist
-#define _CPPP_iconv_close libiconv_close
-#define _CPPP_iconv_open_into libiconv_open_into
-#define _CPPP_iconv_t libiconv_t
-
-//undef libiconv macros
-#undef iconv
-#undef iconv_open
-#undef iconvctl
-#undef iconvlist
-#undef iconv_close
-#undef iconv_open_into
-#undef iconv_t
 
 
 #ifdef __cplusplus

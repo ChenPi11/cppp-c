@@ -15,6 +15,17 @@
    You should have received a copy of the GNU Lesser General Public License
    along with this program; if not, see <https://www.gnu.org/licenses/>.  */
 
+#ifdef __GNUC__
+#pragma GCC system_header
+#endif
+#ifdef _MSC_VER
+#pragma warning(push, 0)
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Weverything"
+#endif
+
 #ifndef _RELOCATABLE_H
 #define _RELOCATABLE_H
 
@@ -99,3 +110,10 @@ extern char * compute_curr_prefix (const char *orig_installprefix,
 #endif
 
 #endif /* _RELOCATABLE_H */
+
+#ifdef _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif

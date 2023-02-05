@@ -26,6 +26,8 @@ extern "C"
 #pragma GCC diagnostic ignored "-Wunused-const-variable="
 #endif
 #ifdef _MSC_VER
+#pragma warning(disable:4710)
+#pragma warning(disable:5045)
 #pragma warning(push, 0)
 #endif
 #ifdef __clang__

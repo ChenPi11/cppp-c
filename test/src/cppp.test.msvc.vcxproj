@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="alld|Win32">
+      <Configuration>alld</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="alld|x64">
+      <Configuration>alld</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="all|Win32">
+      <Configuration>all</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="all|x64">
+      <Configuration>all</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++14d|Win32">
+      <Configuration>C++14d</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++14|Win32">
+      <Configuration>C++14</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++14d|x64">
+      <Configuration>C++14d</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++14|x64">
+      <Configuration>C++14</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++17d|Win32">
+      <Configuration>C++17d</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++17d|x64">
+      <Configuration>C++17d</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++17|Win32">
+      <Configuration>C++17</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++17|x64">
+      <Configuration>C++17</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++20d|Win32">
+      <Configuration>C++20d</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++20d|x64">
+      <Configuration>C++20d</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++20|Win32">
+      <Configuration>C++20</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++20|x64">
+      <Configuration>C++20</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++latestd|Win32">
+      <Configuration>C++latestd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++latestd|x64">
+      <Configuration>C++latestd</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++latest|Win32">
+      <Configuration>C++latest</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="C++latest|x64">
+      <Configuration>C++latest</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\cppp\src\iconv.c" />
+    <ClCompile Include="..\..\cppp\src\iconv_string.c" />
+    <ClCompile Include="..\..\cppp\src\localcharset.c" />
+    <ClCompile Include="..\..\cppp\src\mincpppdef.c" />
+    <ClCompile Include="..\..\cppp\src\relocatable.c" />
+    <ClCompile Include="..\..\cppp\src\_platform.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main2.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\testmain.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{dd33de20-f897-4187-aab1-0962cd02f745}</ProjectGuid>
+    <RootNamespace>cppptestmsvc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14d|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='all|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='alld|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14d|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='all|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='alld|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='C++14d|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='C++14|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++17|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++20|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='all|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='alld|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='C++14d|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='C++14|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++17|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++20|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='all|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='alld|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14d|Win32'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|Win32'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|Win32'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|Win32'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14|Win32'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17|Win32'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20|Win32'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|Win32'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='all|Win32'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).defaultstd.$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='alld|Win32'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).defaultstd.$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14d|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='all|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).defaultstd.$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='alld|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).defaultstd.$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++14d|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++14|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>echo $(TargetName) Linking.......</Command>
+    </PreLinkEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++17|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++20|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='all|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>echo ffffffffffffffffffffffffffffffffffffffffffffff</Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>msbuild.exe $(SolutionPath) -p:Configuration=C++14 -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++17 -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++20 -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++latest -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++14d -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++17d -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++20d -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++latestd -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++14 -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++17 -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++20 -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++latest -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++14d -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++17d -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++20d -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++latestd -p:Platform=x64 -noLogo -m -v:m</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='alld|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>echo ffffffffffffffffffffffffffffffffffffffffffffff</Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>msbuild.exe $(SolutionPath) -p:Configuration=C++14 -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++17 -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++20 -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++latest -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++14d -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++17d -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++20d -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++latestd -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++14 -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++17 -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++20 -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++latest -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++14d -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++17d -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++20d -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++latestd -p:Platform=x64 -noLogo -m -v:diag</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++14d|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++14|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>echo $(TargetName) Linking.......</Command>
+    </PreLinkEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++17|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++20|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>echo $(TargetName) Build Complete</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='all|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>echo ffffffffffffffffffffffffffffffffffffffffffffff</Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>msbuild.exe $(SolutionPath) -p:Configuration=C++14 -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++17 -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++20 -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++latest -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++14d -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++17d -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++20d -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++latestd -p:Platform=x86 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++14 -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++17 -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++20 -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++latest -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++14d -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++17d -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++20d -p:Platform=x64 -noLogo -m -v:m
+msbuild.exe $(SolutionPath) -p:Configuration=C++latestd -p:Platform=x64 -noLogo -m -v:m</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='alld|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>echo ffffffffffffffffffffffffffffffffffffffffffffff</Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>echo ===============================================
+echo C++ Plus Test Program Start Building...
+echo Target:$(TargetName)
+echo PlatformToolSet:$(PlatformToolset)
+echo SDKVersion:$(TargetPlatformVersion)
+echo UCRTVersion:$(TargetUniversalCRTVersion)
+echo ===============================================</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>msbuild.exe $(SolutionPath) -p:Configuration=C++14 -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++17 -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++20 -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++latest -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++14d -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++17d -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++20d -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++latestd -p:Platform=x86 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++14 -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++17 -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++20 -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++latest -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++14d -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++17d -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++20d -p:Platform=x64 -noLogo -m -v:diag
+msbuild.exe $(SolutionPath) -p:Configuration=C++latestd -p:Platform=x64 -noLogo -m -v:diag</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

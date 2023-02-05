@@ -1,5 +1,17 @@
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
+#ifdef __GNUC__
+#pragma GCC system_header
+#endif
+#ifdef _MSC_VER
+#pragma warning(push, 0)
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Weverything"
+#endif
+
+
 #define ICONV_CONST
 
 /* Define if building universal (internal helper macro) */
@@ -976,7 +988,7 @@
 
 /* Define to 1 if C does not support variable-length arrays, and if the
    compiler does not already define this. */
-#undef __STDC_NO_VLA__
+//#undef __STDC_NO_VLA__
 
 /* The _GL_ASYNC_SAFE marker should be attached to functions that are
    signal handlers (for signals other than SIGABRT, SIGPIPE) or can be
@@ -1461,3 +1473,9 @@
 
 # define DLL_VARIABLE
 
+#ifdef _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif

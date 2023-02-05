@@ -2,7 +2,7 @@
 #include <stdio.h>
 __CPPPBASE
 
-int _cppp_platform_check()
+int _cppp_platform_check(void)
 {
 	printf("Checking for " __FILE__ "...\n");
 	printf("__has_aix__\t\t: %d\n", __has_aix__);

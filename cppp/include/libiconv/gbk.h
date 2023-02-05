@@ -17,6 +17,17 @@
  * If not, see <https://www.gnu.org/licenses/>.
  */
 
+#ifdef __GNUC__
+#pragma GCC system_header
+#endif
+#ifdef _MSC_VER
+#pragma warning(disable:4711)
+#pragma warning(push, 0)
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Weverything"
+#endif
 /*
  * GBK
  */
@@ -166,3 +177,10 @@ gbk_wctomb (conv_t conv, unsigned char *r, ucs4_t wc, size_t n)
 
   return RET_ILUNI;
 }
+
+#ifdef _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif

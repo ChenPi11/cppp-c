@@ -6,6 +6,8 @@
 #pragma GCC system_header
 #endif
 #ifdef _MSC_VER
+#pragma warning(disable:4711)
+#pragma warning(disable:5045)
 #pragma warning(push, 0)
 #endif
 #ifdef __clang__

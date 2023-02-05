@@ -17,6 +17,18 @@
  * If not, see <https://www.gnu.org/licenses/>.
  */
 
+#ifdef __GNUC__
+#pragma GCC system_header
+#endif
+#ifdef _MSC_VER
+#pragma warning(disable:5045)
+#pragma warning(push, 0)
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Weverything"
+#endif
+
 /*
  * CNS 11643-1992 plane 15
  */
@@ -1080,3 +1092,9 @@ cns11643_15_mbtowc (conv_t conv, ucs4_t *pwc, const unsigned char *s, size_t n)
   return RET_ILSEQ;
 }
 
+#ifdef _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif

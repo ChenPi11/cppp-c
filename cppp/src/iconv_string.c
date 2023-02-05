@@ -15,8 +15,8 @@
 #pragma clang diagnostic ignored "-Weverything"
 #endif
 
-#include "libiconv/extras/iconv_string.h"
-#include "iconv.h"
+#include "extras/iconv_string.h"
+#include "base_library/cpppiconv.h"
 #include <errno.h>
 #include <stdlib.h>
 #include <string.h>
@@ -26,7 +26,8 @@
 extern "C"
 {
 #endif
-int iconv_string (const char* tocode, const char* fromcode,
+#define iconv_string _cppp_iconv_string
+int _cppp_iconv_string (const char* tocode, const char* fromcode,
                   const char* start, const char* end,
                   char** resultp, size_t* lengthp)
 {

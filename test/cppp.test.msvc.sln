@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cppp.test.msvc", "src\cppp.test.msvc.vcxproj", "{DD33DE20-F897-4187-AAB1-0962CD02F745}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		all|x64 = all|x64
+		all|x86 = all|x86
+		alld|x64 = alld|x64
+		alld|x86 = alld|x86
+		C++14|x64 = C++14|x64
+		C++14|x86 = C++14|x86
+		C++14d|x64 = C++14d|x64
+		C++14d|x86 = C++14d|x86
+		C++17|x64 = C++17|x64
+		C++17|x86 = C++17|x86
+		C++17d|x64 = C++17d|x64
+		C++17d|x86 = C++17d|x86
+		C++20|x64 = C++20|x64
+		C++20|x86 = C++20|x86
+		C++20d|x64 = C++20d|x64
+		C++20d|x86 = C++20d|x86
+		C++latest|x64 = C++latest|x64
+		C++latest|x86 = C++latest|x86
+		C++latestd|x64 = C++latestd|x64
+		C++latestd|x86 = C++latestd|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.all|x64.ActiveCfg = all|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.all|x64.Build.0 = all|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.all|x86.ActiveCfg = all|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.all|x86.Build.0 = all|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.alld|x64.ActiveCfg = alld|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.alld|x64.Build.0 = alld|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.alld|x86.ActiveCfg = alld|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.alld|x86.Build.0 = alld|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++14|x64.ActiveCfg = C++14|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++14|x64.Build.0 = C++14|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++14|x86.ActiveCfg = C++14|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++14|x86.Build.0 = C++14|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++14d|x64.ActiveCfg = C++14d|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++14d|x64.Build.0 = C++14d|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++14d|x86.ActiveCfg = C++14d|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++14d|x86.Build.0 = C++14d|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++17|x64.ActiveCfg = C++17|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++17|x64.Build.0 = C++17|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++17|x86.ActiveCfg = C++17|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++17|x86.Build.0 = C++17|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++17d|x64.ActiveCfg = C++17d|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++17d|x64.Build.0 = C++17d|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++17d|x86.ActiveCfg = C++17d|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++17d|x86.Build.0 = C++17d|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++20|x64.ActiveCfg = C++20|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++20|x64.Build.0 = C++20|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++20|x86.ActiveCfg = C++20|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++20|x86.Build.0 = C++20|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++20d|x64.ActiveCfg = C++20d|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++20d|x64.Build.0 = C++20d|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++20d|x86.ActiveCfg = C++20d|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++20d|x86.Build.0 = C++20d|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++latest|x64.ActiveCfg = C++latest|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++latest|x64.Build.0 = C++latest|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++latest|x86.ActiveCfg = C++latest|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++latest|x86.Build.0 = C++latest|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++latestd|x64.ActiveCfg = C++latestd|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++latestd|x64.Build.0 = C++latestd|x64
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++latestd|x86.ActiveCfg = C++latestd|Win32
+		{DD33DE20-F897-4187-AAB1-0962CD02F745}.C++latestd|x86.Build.0 = C++latestd|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {465C47EB-E5DB-4844-9C1A-CBC959AEAC28}
+	EndGlobalSection
+EndGlobal

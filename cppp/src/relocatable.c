@@ -1,3 +1,13 @@
+
+#ifdef _MSC_VER
+#pragma warning(disable:4206)
+#pragma warning(push, 0)
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Weverything"
+#endif
+
 /* Provide relocatable packages.
    Copyright (C) 2003-2006, 2008-2018 Free Software Foundation, Inc.
    Written by Bruno Haible <bruno@clisp.org>, 2003.
@@ -19,6 +29,8 @@
 /* Tell glibc's <stdio.h> to provide a prototype for getline().
    This must come before <config.h> because <config.h> may include
    <features.h>, and once <features.h> has been included, it's too late.  */
+
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -592,4 +604,11 @@ relocate2 (const char *pathname, char **allocatedp)
 #endif
 #ifdef __cplusplus
 }
+#endif
+
+#ifdef _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
 #endif

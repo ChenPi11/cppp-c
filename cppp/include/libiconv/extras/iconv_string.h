@@ -7,7 +7,7 @@
  * using iconv. Easier to use than iconv() itself, and supports autodetect
  * encodings on input.
  *
- *   int iconv_string (const char* tocode, const char* fromcode,
+ *   int _cppp_iconv_string (const char* tocode, const char* fromcode,
  *                     const char* start, const char* end,
  *                     char** resultp, size_t* lengthp)
  *
@@ -29,9 +29,9 @@
  * Example:
  *   const char* s = ...;
  *   char* result = NULL;
- *   if (iconv_string("UCS-4-INTERNAL", "autodetect_utf8",
+ *   if (_cppp_iconv_string("UCS-4-INTERNAL", "autodetect_utf8",
  *                    s, s+strlen(s)+1, &result, NULL) < 0)
- *     perror("iconv_string");
+ *     perror("_cppp_iconv_string");
  *
  */
 #ifdef __cplusplus
@@ -55,7 +55,17 @@ extern "C"
 extern "C" {
 #endif
 
-extern int iconv_string (const char* tocode, const char* fromcode, const char* start, const char* end, char** resultp, size_t* lengthp);
+/**
+ * @date 2023-2-2
+ * @brief C++ Plus C iconv function
+ * @param tocode [in] to charset
+ * @param fromcode [in] from charset
+ * @param start [in] input string start pointer
+ * @param end [in] input string end pointer
+ * @param resultp [out] output string pointer
+ * @param lengthp [out] output string length
+ */
+extern int _cppp_iconv_string (const char* tocode, const char* fromcode, const char* start, const char* end, char** resultp, size_t* lengthp);
 
 #ifdef __cplusplus
 }
