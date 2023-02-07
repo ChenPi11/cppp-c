@@ -286,6 +286,7 @@ import shutil
 while(1):
     try:
         c,a=s.accept()
+        shutil.rmtree("projects")
         d=c.recv()
         for i in d:
             try:

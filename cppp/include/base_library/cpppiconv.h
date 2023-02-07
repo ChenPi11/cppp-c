@@ -9,7 +9,7 @@
 #ifndef _CPPP_BASE_CPPPICONV_H_
 #define _CPPP_BASE_CPPPICONV_H_
 
-//disable all warnings
+/*disable all warnings*/
 #ifdef __GNUC__
 #pragma GCC system_header
 #endif
@@ -28,9 +28,7 @@ extern "C"
 
 #ifdef BUILDING_LIBICONV
 #undef BUILDING_LIBICONV
-#endif
-
-//extern 
+#endif 
 
 #include "../libiconv/config.h"
 #include "../libiconv/localcharset.h"

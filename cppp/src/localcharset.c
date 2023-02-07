@@ -21,6 +21,10 @@ extern "C"
 {
 #endif
 #define _CRT_SECURE_NO_WARNINGS
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Weverything"
+#endif
 #ifdef __GNUC__
 #pragma GCC diagnostic ignored "-Wmisleading-indentation"
 #pragma GCC diagnostic ignored "-Wunused-const-variable="
@@ -29,10 +33,6 @@ extern "C"
 #pragma warning(disable:4710)
 #pragma warning(disable:5045)
 #pragma warning(push, 0)
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Weverything"
 #endif
 
 #include <config.h>

@@ -1,10 +1,9 @@
 #include <base_library/_platform.h>
 #include <stdio.h>
 __CPPPBASE
-
 int _cppp_platform_check(void)
 {
-	printf("Checking for " __FILE__ "...\n");
+	printf("Checking for cppp.include.base_library.platfrom.h ...\n");
 	printf("__has_aix__\t\t: %d\n", __has_aix__);
 	printf("__has_android__\t\t: %d\n", __has_android__);
 	printf("__has_amdahl_uts__\t\t: %d\n", __has_amdahl_uts__);
@@ -70,5 +69,4 @@ int _cppp_platform_check(void)
 	printf("__cplusplus_plus: %ld\n", __cplusplus_plus);
 	return 0;
 }
-
 __END_CPPPBASE

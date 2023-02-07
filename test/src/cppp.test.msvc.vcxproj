@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="alld|Win32">
-      <Configuration>alld</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="alld|x64">
-      <Configuration>alld</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="all|Win32">
       <Configuration>all</Configuration>
       <Platform>Win32</Platform>
@@ -17,68 +9,76 @@
       <Configuration>all</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="C++14d|Win32">
-      <Configuration>C++14d</Configuration>
+    <ProjectConfiguration Include="alld|Win32">
+      <Configuration>alld</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="C++14|Win32">
-      <Configuration>C++14</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="C++14d|x64">
-      <Configuration>C++14d</Configuration>
+    <ProjectConfiguration Include="alld|x64">
+      <Configuration>alld</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="C++14|x64">
-      <Configuration>C++14</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="C++17d|Win32">
-      <Configuration>C++17d</Configuration>
+    <ProjectConfiguration Include="c++14d|Win32">
+      <Configuration>c++14d</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="C++17d|x64">
-      <Configuration>C++17d</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="C++17|Win32">
-      <Configuration>C++17</Configuration>
+    <ProjectConfiguration Include="c++14|Win32">
+      <Configuration>c++14</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="C++17|x64">
-      <Configuration>C++17</Configuration>
+    <ProjectConfiguration Include="c++14d|x64">
+      <Configuration>c++14d</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="C++20d|Win32">
-      <Configuration>C++20d</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="C++20d|x64">
-      <Configuration>C++20d</Configuration>
+    <ProjectConfiguration Include="c++14|x64">
+      <Configuration>c++14</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="C++20|Win32">
-      <Configuration>C++20</Configuration>
+    <ProjectConfiguration Include="c++17d|Win32">
+      <Configuration>c++17d</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="C++20|x64">
-      <Configuration>C++20</Configuration>
+    <ProjectConfiguration Include="c++17d|x64">
+      <Configuration>c++17d</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="C++latestd|Win32">
-      <Configuration>C++latestd</Configuration>
+    <ProjectConfiguration Include="c++17|Win32">
+      <Configuration>c++17</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="C++latestd|x64">
-      <Configuration>C++latestd</Configuration>
+    <ProjectConfiguration Include="c++17|x64">
+      <Configuration>c++17</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="C++latest|Win32">
-      <Configuration>C++latest</Configuration>
+    <ProjectConfiguration Include="c++20d|Win32">
+      <Configuration>c++20d</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="C++latest|x64">
-      <Configuration>C++latest</Configuration>
+    <ProjectConfiguration Include="c++20d|x64">
+      <Configuration>c++20d</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="c++20|Win32">
+      <Configuration>c++20</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="c++20|x64">
+      <Configuration>c++20</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="c++latestd|Win32">
+      <Configuration>c++latestd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="c++latestd|x64">
+      <Configuration>c++latestd</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="c++latest|Win32">
+      <Configuration>c++latest</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="c++latest|x64">
+      <Configuration>c++latest</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
@@ -86,8 +86,8 @@
     <ClCompile Include="..\..\cppp\src\iconv.c" />
     <ClCompile Include="..\..\cppp\src\iconv_string.c" />
     <ClCompile Include="..\..\cppp\src\localcharset.c" />
-    <ClCompile Include="..\..\cppp\src\mincpppdef.c" />
     <ClCompile Include="..\..\cppp\src\relocatable.c" />
+    <ClCompile Include="..\..\cppp\src\stringbase.c" />
     <ClCompile Include="..\..\cppp\src\_platform.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main2.c" />
@@ -103,59 +103,52 @@
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14d|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++14d|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++17d|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++20d|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++latestd|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++14|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++17|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++20|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='all|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++latest|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
@@ -169,59 +162,59 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14d|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='all|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++14d|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++17d|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++20d|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++latestd|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++14|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++17|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++20|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='all|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++latest|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
@@ -235,124 +228,125 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='all|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='C++14d|Win32'">
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='c++14d|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='c++17d|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='c++20d|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='c++latestd|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='C++14|Win32'">
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='c++14|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++17|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='c++17|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++20|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='c++20|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='all|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='c++latest|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='alld|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='C++14d|x64'">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='all|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|x64'" Label="PropertySheets">
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='c++14d|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|x64'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='c++17d|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|x64'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='c++20d|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='C++14|x64'">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='c++latestd|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++17|x64'" Label="PropertySheets">
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='c++14|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++20|x64'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='c++17|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|x64'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='c++20|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='all|x64'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='c++latest|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='alld|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='all|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14d|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++14d|Win32'">
     <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\bin\</OutDir>
     <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
     <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++17d|Win32'">
     <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\bin\</OutDir>
     <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
     <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++20d|Win32'">
     <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\bin\</OutDir>
     <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
     <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++latestd|Win32'">
     <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\bin\</OutDir>
     <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
     <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++14|Win32'">
     <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\bin\</OutDir>
     <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
     <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++17|Win32'">
     <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\bin\</OutDir>
     <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
     <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++20|Win32'">
     <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\bin\</OutDir>
     <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
     <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++latest|Win32'">
     <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\bin\</OutDir>
     <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='all|Win32'">
-    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)..\bin\</OutDir>
-    <IntDir>$(SolutionDir)..\obj\$(ProjectName).defaultstd.$(PlatformTarget)\</IntDir>
     <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='alld|Win32'">
@@ -361,58 +355,58 @@
     <IntDir>$(SolutionDir)..\obj\$(ProjectName).defaultstd.$(PlatformTarget)\</IntDir>
     <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14d|x64'">
-    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)..\bin\</OutDir>
-    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|x64'">
-    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)..\bin\</OutDir>
-    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|x64'">
-    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)..\bin\</OutDir>
-    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|x64'">
-    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)..\bin\</OutDir>
-    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++14|x64'">
-    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)..\bin\</OutDir>
-    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++17|x64'">
-    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)..\bin\</OutDir>
-    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++20|x64'">
-    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)..\bin\</OutDir>
-    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|x64'">
-    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)..\bin\</OutDir>
-    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='all|x64'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='all|Win32'">
     <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\bin\</OutDir>
     <IntDir>$(SolutionDir)..\obj\$(ProjectName).defaultstd.$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++14d|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++17d|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++20d|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++latestd|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++14|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++17|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++20|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='c++latest|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).$(Configuration).$(PlatformTarget)\</IntDir>
     <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='alld|x64'">
@@ -421,7 +415,13 @@
     <IntDir>$(SolutionDir)..\obj\$(ProjectName).defaultstd.$(PlatformTarget)\</IntDir>
     <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++14d|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='all|x64'">
+    <IncludePath>E:\work\cppp-c\test\include;E:\work\cppp-c\cppp\include;E:\work\cppp-c\cppp\include\libiconv;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(ProjectName).defaultstd.$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName).$(Configuration).$(PlatformTarget)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++14d|Win32'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
@@ -445,10 +445,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++17d|Win32'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
@@ -473,10 +475,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++20d|Win32'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
@@ -501,10 +505,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++latestd|Win32'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
@@ -529,10 +535,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++14|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++14|Win32'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -563,10 +571,12 @@ echo ===============================================</Command>
       <Command>echo $(TargetName) Linking.......</Command>
     </PreLinkEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++17|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++17|Win32'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -595,10 +605,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++20|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++20|Win32'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -627,10 +639,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++latest|Win32'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -659,10 +673,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='all|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='alld|Win32'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -712,7 +728,7 @@ msbuild.exe $(SolutionPath) -p:Configuration=C++20d -p:Platform=x64 -noLogo -m -
 msbuild.exe $(SolutionPath) -p:Configuration=C++latestd -p:Platform=x64 -noLogo -m -v:m</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='alld|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='all|Win32'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -762,7 +778,7 @@ msbuild.exe $(SolutionPath) -p:Configuration=C++20d -p:Platform=x64 -noLogo -m -
 msbuild.exe $(SolutionPath) -p:Configuration=C++latestd -p:Platform=x64 -noLogo -m -v:diag</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++14d|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++14d|x64'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
@@ -786,10 +802,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++17d|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++17d|x64'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
@@ -814,10 +832,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++20d|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++20d|x64'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
@@ -842,10 +862,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++latestd|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++latestd|x64'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
@@ -870,10 +892,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++14|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++14|x64'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -904,10 +928,12 @@ echo ===============================================</Command>
       <Command>echo $(TargetName) Linking.......</Command>
     </PreLinkEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++17|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++17|x64'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -936,10 +962,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++20|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++20|x64'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -968,10 +996,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='C++latest|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='c++latest|x64'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -1000,10 +1030,12 @@ echo UCRTVersion:$(TargetUniversalCRTVersion)
 echo ===============================================</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo $(TargetName) Build Complete</Command>
+      <Command>echo $(TargetName) Build Complete
+$(TargetPath)
+echo $(TargetName) Test Success</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='all|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='alld|x64'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -1053,7 +1085,7 @@ msbuild.exe $(SolutionPath) -p:Configuration=C++20d -p:Platform=x64 -noLogo -m -
 msbuild.exe $(SolutionPath) -p:Configuration=C++latestd -p:Platform=x64 -noLogo -m -v:m</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='alld|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='all|x64'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>

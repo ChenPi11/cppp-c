@@ -1,0 +1,21 @@
+time:257.6314754486084
+suc(19/0):	cppp.test.gcc.c90
+	cppp.test.gcc.c99
+	cppp.test.gcc.c11
+	cppp.test.gcc.c17
+	cppp.test.g++.c++11
+	cppp.test.g++.c++14
+	cppp.test.g++.c++17
+	cppp.test.g++.c++20
+	cppp.test.g++.c++23
+	cppp.test.clang.c90
+	cppp.test.clang.c99
+	cppp.test.clang.c11
+	cppp.test.clang.c17
+	cppp.test.clang++.c++11
+	cppp.test.clang++.c++14
+	cppp.test.clang++.c++17
+	cppp.test.clang++.c++20
+	cppp.test.clang++.c++23
+	cppp.test.msvc
+ign(0/0):err(19/0):

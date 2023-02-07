@@ -9,14 +9,7 @@ using namespace ___CPPP_BASE_LIBRARY_NS;
 
 int main()
 {
-    /*::setlocale(LC_ALL,"en_US.UTF-8");
-    while(0)
-    {
-        c_wstring ws = make_wstring(L"T测试T");
-        printf("%ls",ws.buf);
-        free_wstring(&ws);
-    }*/
-    //return 0;
+    assign_stringbuffer(NULL,0);
     const char* s = "eee哈哈哈";
     char* result = NULL;
     size_t len=0;

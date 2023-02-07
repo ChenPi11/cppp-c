@@ -33,10 +33,10 @@
     <ClCompile Include="..\..\cppp\src\localcharset.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\cppp\src\mincpppdef.c">
+    <ClCompile Include="..\..\cppp\src\relocatable.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\cppp\src\relocatable.c">
+    <ClCompile Include="..\..\cppp\src\stringbase.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
