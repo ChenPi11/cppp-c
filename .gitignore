@@ -29,6 +29,8 @@
 # Executables
 *.exe
 *.out
+# Build log
+*.log
 
 # dirs
 bin/
